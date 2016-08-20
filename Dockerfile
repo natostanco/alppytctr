@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM gliderlabs/alpine
 
 RUN sed -i '$ a http://dl-cdn.alpinelinux.org/alpine/edge/testing' /etc/apk/repositories \
  && apk update \
